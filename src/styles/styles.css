@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  position: relative;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .search-input {
+  display: none;
+}
+header .header-text {
+  display: inline-flex;
+  justify-content: space-between;
+  width: 35%;
+}
+header .header-text .hamburger-btn {
+  z-index: 2;
+  padding: 3px 0;
+  width: 1.5rem;
+}
+header .header-text .hamburger-btn .line {
+  transition: 0.4s ease;
+  margin-bottom: 5px;
+  width: 20px;
+  height: 2px;
+  background: #fff;
+}
+header .header-text .hamburger-btn.close .line:nth-child(1) {
+  opacity: 0;
+}
+header .header-text .hamburger-btn.close .line:nth-child(2) {
+  transform: rotate(45deg) translateY(0.5rem);
+}
+header .header-text .hamburger-btn.close .line:nth-child(3) {
+  transform: rotate(-45deg) translateX(-0.2rem) translateY(-0.3rem);
+}
+@keyframes fromRight {
+  from {
+    opacity: 0;
+    transform: translateX(50%);
+  }
+}
+header .burger-nav.clicked {
+  animation: fromRight 0.2s ease-in;
+  z-index: 1;
+  position: absolute;
+  background: #000;
+  top: 1px;
+  right: 0.1px;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+header .burger-nav.clicked .login {
+  margin: 4rem 2rem 1rem;
+}
+header .burger-nav.clicked .login h1 {
+  padding: 1rem 0;
+}
+header .burger-nav.clicked span {
+  margin: 0 2rem;
+}
+header .burger-nav.clicked ul {
+  margin: 1rem 2rem;
+  display: flex;
+  flex-flow: column wrap;
+}
+header .burger-nav.clicked ul li {
+  list-style: none;
+  padding-bottom: 1rem;
+  font-size: 1.3em;
+  text-transform: capitalize;
+}
+header .burger-nav {
+  display: none;
+}/*# sourceMappingURL=styles.css.map */
