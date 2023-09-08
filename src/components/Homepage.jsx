@@ -1,43 +1,59 @@
 import React, { useState } from 'react'
+import Header from './Header'
 
+import Recos from './Recos'
+const year = new Date;
+let copyright = year.getFullYear()
 const Homepage = () => {
-  const [burgerClick, setBurgerClick] = useState(0)
-  const burgerBtn =()=>{
-    setBurgerClick(clicked => !clicked);
-  }
+
   return (
     <>
-      <header>
-        <div><img src="" alt="spotify-logo" /></div>
+      <Header />
+      <Recos />
 
-        <div className='header-text'>
-          <div className='search-container'>
-            <img src="" alt="search icon" />
-            <input type="text" className='search-input'/>
-          </div>
+      <aside>
+        <ul>
+          <li>Company</li>
+          <li>About</li>
+          <li>Jobs</li>
+          <li>For the Record</li>
+        </ul>
+      </aside>
+      <aside>
+        <ul>
+          <li>Communities</li>
+          <li>For Artist</li>
+          <li>Developers</li>
+          <li>Advertising</li>
+          <li>Investors</li>
+          <li>Vendors</li>
+        </ul>
+      </aside>
+      <aside>
+        <ul>
+          <li>Useful links</li>
+          <li>Support</li>
+          <li>Free Mobile App</li>
+        </ul>
+      </aside>
 
-          <div className={burgerClick ? "hamburger-btn close" : "hamburger-btn"} onClick={burgerBtn}>
-            <div className="line"></div>
-            <div className="line"></div>
-            <div className="line"></div>
-          </div>
-        </div>
-
-        <div className={burgerClick ? 'burger-nav clicked': 'burger-nav'}>
-          <div className='login'>
-            <h1>Log in</h1>
-            <h1>Sign up</h1>
-          </div>
-            <span>.</span>
-          <ul>
-            <li>premium</li>
-            <li>help</li>
-            <li>download</li>
-            <li>privacy</li>
-            <li>terms</li>
-          </ul>
-        </div>
-      </header>
+      <div className="socials">
+        <a href=""><img src="" alt="intsa" /></a>
+        <a href=""><img src="" alt="twitter" /></a>
+        <a href=""><img src="" alt="facebook" /></a>
+      </div>
+      
+      <footer>
+        <ul>
+          <li>legal</li>
+          <li>privacy</li>
+          <li>privacy policy</li>
+          <li>cookies</li>
+          <li>about ads</li>
+          <li>accessibility</li>
+        </ul>
+        <span>c {copyright} Spotify AB</span>
+      </footer>
     </>
   )
 }
