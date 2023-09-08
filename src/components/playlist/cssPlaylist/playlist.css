@@ -1,0 +1,176 @@
+.playlist-container {
+  padding: 1rem;
+  text-align: center;
+  background: rgb(18, 18, 18);
+  background: linear-gradient(360deg, rgb(18, 18, 18) 31%, rgb(62, 62, 62) 100%);
+}
+.playlist-container img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 150px;
+  background: gray;
+}
+.playlist-container .playlist-details {
+  text-align: left;
+  color: rgb(136, 136, 136);
+}
+.playlist-container .playlist-details h1 {
+  font-size: 1.5em;
+  color: #fff;
+  margin: 1rem 0;
+}
+.playlist-container .playlist-details .spotify {
+  margin: 0.5rem 0;
+}
+.playlist-container .playlist-details .spotify strong {
+  color: #fff;
+}
+.playlist-container .playlist-details .spotify img {
+  background: none;
+}
+.playlist-container .playlist-details .buttons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1rem 0;
+}
+.playlist-container .playlist-details .buttons img {
+  background: transparent;
+}
+.playlist-container .playlist-details .buttons .like-share {
+  width: 30%;
+  display: flex;
+}
+.playlist-container .playlist-details .buttons button {
+  background: #1ed760;
+  padding: 0.9rem 1rem;
+  border: none;
+  border-radius: 30px;
+}
+.playlist-container .playlist-details .buttons button .triangle {
+  width: 0;
+  height: 0;
+  border-top: 8px solid transparent;
+  border-left: 12px solid #000;
+  border-bottom: 8px solid transparent;
+}
+
+.music-container {
+  margin: 0 1rem;
+}
+.music-container .music {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.music-container .music .details {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.music-container .music .details img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 15%;
+}
+.music-container .music .details .song-name {
+  display: flex;
+  flex-direction: column;
+}
+.music-container .music .details .song-name strong {
+  color: #fff;
+}
+.music-container .music .details .song-name span {
+  color: rgb(136, 136, 136);
+}
+.music-container .music .dots .dot {
+  width: 2px;
+  height: 2px;
+  border-radius: 5px;
+  margin: 0.2rem;
+  background: rgb(136, 136, 136);
+}
+
+.music-playing {
+  margin: 1rem 1.5rem;
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: space-between;
+}
+.music-playing .top-details {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 6rem;
+}
+.music-playing .top-details .arrow-down .left, .music-playing .top-details .arrow-down .right {
+  height: 0.8rem;
+  width: 2px;
+  background: #fff;
+}
+.music-playing .top-details .arrow-down .left {
+  transform: rotate(-45deg);
+}
+.music-playing .top-details .arrow-down .right {
+  transform: rotate(45deg) translate(-0.2rem, -0.9rem);
+}
+.music-playing .top-details .music-details {
+  display: inline-flex;
+  flex-flow: column;
+  align-items: center;
+}
+.music-playing .top-details .music-details span {
+  text-transform: uppercase;
+  font-size: 0.5em;
+}
+.music-playing .top-details .music-details strong {
+  text-transform: capitalize;
+  font-size: 0.65em;
+}
+.music-playing .music-cover {
+  padding: 0 1rem;
+}
+.music-playing .music-cover img {
+  width: 100%;
+}
+.music-playing .bottom-details {
+  margin-top: 6rem;
+}
+.music-playing .bottom-details .artist-music {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+}
+.music-playing .bottom-details .artist-music .title-artist {
+  display: grid;
+}
+.music-playing .bottom-details .artist-music .title-artist strong {
+  text-transform: capitalize;
+}
+.music-playing .bottom-details .artist-music .title-artist span {
+  color: gray;
+}
+.music-playing .bottom-details .playing {
+  margin-top: 1rem;
+  display: grid;
+}
+.music-playing .bottom-details .playing .playing-buttons {
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.music-playing .bottom-details .playing .playing-buttons .playBtn {
+  background: #fff;
+  padding: 1rem 1.2rem;
+  border-radius: 50px;
+}
+.music-playing .bottom-details .playing .playing-buttons .playBtn .triangle {
+  width: 0;
+  height: 0;
+  border-top: 12px solid transparent;
+  border-left: 16px solid #000;
+  border-bottom: 12px solid transparent;
+}/*# sourceMappingURL=playlist.css.map */
