@@ -3,6 +3,14 @@
   padding: 0;
 }
 
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../assets/static/GothamMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url("../assets/static/GothamLight.ttf") format("truetype");
+}
 body {
   background: #121212;
 }
@@ -15,6 +23,7 @@ header {
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-family: "GothamMedium";
 }
 header .search-input {
   display: none;
@@ -64,13 +73,14 @@ header .burger-nav.clicked {
   flex-direction: column;
 }
 header .burger-nav.clicked .login {
-  margin: 4rem 2rem 1rem;
+  margin: 4rem 2rem 0;
 }
 header .burger-nav.clicked .login h1 {
+  font-size: 1.5em;
   padding: 1rem 0;
 }
 header .burger-nav.clicked span {
-  margin: 0 2rem;
+  margin: 2rem 2rem;
 }
 header .burger-nav.clicked ul {
   margin: 1rem 2rem;
@@ -79,8 +89,8 @@ header .burger-nav.clicked ul {
 }
 header .burger-nav.clicked ul li {
   list-style: none;
-  padding-bottom: 1rem;
-  font-size: 1.3em;
+  padding-bottom: 1.5rem;
+  font-size: 1em;
   text-transform: capitalize;
 }
 header .burger-nav {
@@ -91,6 +101,7 @@ section {
   margin: 2rem 1rem;
 }
 section h2 {
+  font-family: "GothamMedium";
   margin-bottom: 1rem;
   text-transform: capitalize;
   color: #fff;
@@ -114,9 +125,12 @@ section .thumbnail-container .button img {
   border-radius: 5px;
 }
 section .thumbnail-container .button h3 {
+  margin: 0.3rem 0;
+  font-family: "GothamLight";
   text-transform: capitalize;
   width: -moz-fit-content;
   width: fit-content;
+  font-size: 0.8em;
 }
 
 section:nth-child(4) {
@@ -131,6 +145,7 @@ aside ul {
   flex-direction: column;
 }
 aside ul li {
+  font-family: "GothamLight";
   list-style: none;
   margin-bottom: 1rem;
   color: #b0b0b0;
@@ -166,5 +181,6 @@ footer ul {
   margin-bottom: 1rem;
 }
 footer ul li {
+  font-family: "GothamMedium";
   list-style: none;
 }/*# sourceMappingURL=styles.css.map */

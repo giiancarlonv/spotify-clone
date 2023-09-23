@@ -2,6 +2,14 @@
   margin: 0;
   padding: 0;
 }
+@font-face{
+  font-family: 'GothamMedium';
+  src: url('../assets/static/GothamMedium.ttf') format('truetype');
+}
+@font-face{
+  font-family: 'GothamLight';
+  src: url('../assets/static/GothamLight.ttf') format('truetype');
+}
 body{
   background: #121212;
 }
@@ -13,6 +21,7 @@ header{
   justify-content: space-between;
   align-items: center;
   padding: 1rem;
+  font-family: 'GothamMedium';
   .search-input{
     display: none;
   }
@@ -63,13 +72,14 @@ header{
     display: flex;
     flex-direction: column;
     .login{
-      margin: 4rem 2rem 1rem;
+      margin: 4rem 2rem 0;
       h1{
+        font-size: 1.5em;
         padding: 1rem 0;
       }
     }
     span{
-      margin: 0 2rem;
+      margin: 2rem 2rem;
     }
     ul{
       margin: 1rem 2rem;
@@ -77,8 +87,8 @@ header{
       flex-flow: column wrap;
       li{
         list-style: none;
-        padding-bottom: 1rem;
-        font-size: 1.3em;
+        padding-bottom: 1.5rem;
+        font-size: 1em;
         text-transform: capitalize;
       }
     }
@@ -91,6 +101,7 @@ header{
 section{
   margin: 2rem 1rem;
   h2{
+    font-family: 'GothamMedium';
     margin-bottom: 1rem;
     text-transform: capitalize;
     color: #fff;
@@ -111,8 +122,11 @@ section{
         border-radius: 5px;
       }
       h3{
+        margin: .3rem 0;
+        font-family: 'GothamLight';
         text-transform: capitalize;
         width: fit-content;
+        font-size: .8em;
       }
     }
   }
@@ -127,6 +141,7 @@ aside{
     display: flex;
     flex-direction: column;
     li{
+      font-family: 'GothamLight';
       list-style: none;
       margin-bottom: 1rem;
       color: #b0b0b0;
@@ -162,6 +177,8 @@ footer{
     gap: .7rem;
     margin-bottom: 1rem;
     li{
+
+      font-family: 'GothamMedium';
       list-style: none;
     }
   }

@@ -1,23 +1,39 @@
+@font-face {
+  font-family: "GothamMedium";
+  src: url("../assets/static/GothamMedium.ttf") format("truetype");
+}
+@font-face {
+  font-family: "GothamLight";
+  src: url("../assets/static/GothamLight.ttf") format("truetype");
+}
 .playlist-container {
   padding: 1rem;
   text-align: center;
   background: rgb(18, 18, 18);
   background: linear-gradient(360deg, rgb(18, 18, 18) 31%, rgb(62, 62, 62) 100%);
+  font-family: "GothamLight";
+  letter-spacing: 0.3px;
 }
 .playlist-container img {
   -o-object-fit: cover;
      object-fit: cover;
   width: 150px;
-  background: gray;
+  background: rgb(68, 68, 68);
+  box-shadow: 0 0 30px -10px black;
 }
 .playlist-container .playlist-details {
   text-align: left;
-  color: rgb(136, 136, 136);
+  color: rgb(170, 170, 170);
 }
 .playlist-container .playlist-details h1 {
+  font-family: "GothamMedium";
   font-size: 1.5em;
   color: #fff;
   margin: 1rem 0;
+}
+.playlist-container .playlist-details span {
+  font-family: "GothamMedium";
+  font-size: 0.8em;
 }
 .playlist-container .playlist-details .spotify {
   margin: 0.5rem 0;
@@ -62,6 +78,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  font-family: "GothamLight";
 }
 .music-container .music .details {
   display: flex;
@@ -173,4 +190,59 @@
   border-top: 12px solid transparent;
   border-left: 16px solid #000;
   border-bottom: 12px solid transparent;
+}
+
+.music-option {
+  display: none;
+}
+
+.music-option.clicked {
+  display: block;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.6);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  top: 0.1px;
+  width: 100%;
+  height: 100vh;
+  color: #fff;
+  font-family: "GothamLight";
+  z-index: 2;
+}
+.music-option.clicked .details {
+  display: grid;
+  grid-template-columns: 0.4fr 1fr;
+  margin: 5rem 1rem 3rem;
+}
+.music-option.clicked .details img {
+  width: 5rem;
+}
+.music-option.clicked .details .song-name {
+  display: flex;
+  flex-direction: column;
+}
+.music-option.clicked .details .song-name span {
+  color: rgb(175, 175, 175);
+}
+.music-option.clicked ul {
+  margin: 0 1rem;
+  text-transform: capitalize;
+  font-family: "GothamMedium";
+}
+.music-option.clicked ul li {
+  list-style: none;
+  margin-bottom: 2rem;
+  gap: 2rem;
+}
+.music-option.clicked center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.music-option.clicked center button {
+  font-family: "GothamMedium";
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.1em;
 }/*# sourceMappingURL=playlist.css.map */

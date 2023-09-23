@@ -27,7 +27,7 @@ const Header = () => {
             <h1>Log in</h1>
             <h1>Sign up</h1>
           </div>
-            <span>.</span>
+            <span>__</span>
           <ul>
             <li>premium</li>
             <li>help</li>
